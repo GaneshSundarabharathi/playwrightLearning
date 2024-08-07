@@ -38,6 +38,7 @@ test.only("dropdown and radio button", async ({page})=>
     await terms.uncheck(); //to uncheck the checkbox
     expect(await terms.isChecked()).toBeFalsy(); //await depends on where the action is. Here action isChecked is in inside expect so await is inside expect
     await expect(blinkingText).toHaveAttribute("class","blinkingText"); //to validate a dom attribute
+    // to test github
     
 }
 );
